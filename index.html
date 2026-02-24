@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>para mi monita preciosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts"></div>
+    
+    <header>
+        <h1>❤︎ bienvenida, vida mía ❤︎</h1>
+    </header>
+    
+    <section class="intro">
+    <p>
+        en esta página te estaré dejando regalitos el 3 de cada mes 😽 
+        estoy eternamente agradecida de poder amarte cada día, de acompañarnos en esta y en todas nuestras vidas
+    </p>
+    </section>
+
+   <section class="mes febrero">
+    <h2 class="titulo-mes">febrero 2026</h2>
+    <ul>
+        <li>
+            no fue necesario ir <strong>lento</strong>
+            <audio controls>
+                <source src="lento.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+
+        <li>
+            porque tú <strong>eres para mí</strong> y yo soy para ti
+            <audio controls>
+                <source src="eresparami.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+
+        <li>
+            y me siento muy <strong>afortunada</strong> de tenerte
+            <audio controls>
+                <source src="afortunada.mp3" type="audio/mpeg">
+            </audio>
+        </li>
+    </ul>
+</section>
+    <footer>
+        <p>&copy; 03-01-2026 te amuuu</p>
+        
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤";
+    heart.classList.add("floating-heart");
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>

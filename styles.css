@@ -1,0 +1,136 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Header rojo */
+header {
+    background-color: #8b0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em;
+    letter-spacing: 2px;
+}
+
+/* Sección central */
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Tarjetas de canciones */
+li {
+    background: #ffe6ea; /* rosado suave */
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-radius: 12px;
+    border: 2px solid #8b0000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover elegante */
+li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
+}
+
+/* Audio */
+audio {
+    margin-top: 1em;
+    width: 100%;
+}
+
+/* Footer moradito */
+footer {
+    background-color: #f3e6ff;
+    color: #5a189a;
+    text-align: center;
+    padding: 1.5em;
+    margin-top: 2em;
+}
+
+/* Animación entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Corazones flotando */
+.floating-heart {
+    position: fixed;
+    bottom: -10px;
+    color: #8b0000;
+    animation: rise linear forwards;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+.intro {
+    text-align: center;
+    margin: 3em auto;
+    max-width: 600px;
+    font-size: 1.3em;
+    color: #8b0000;
+    font-style: italic;
+    animation: fadeIn 2s ease-in;
+}
+
+.intro {
+    background: #ffe6ea;
+    border: 2px solid #8b0000;
+    border-radius: 15px;
+    padding: 2em;
+    max-width: 650px;
+    margin: 3em auto;
+    text-align: center;
+    font-size: 1.3em;
+    color: #8b0000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-mes {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 1em;
+    color: #8b0000;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.titulo-mes::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: #8b0000;
+    margin: 15px auto 0;
+}
+
+.mes.febrero li {
+    background: #ffe6ea;
+    border-color: #8b0000;
+}
