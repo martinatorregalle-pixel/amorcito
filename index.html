@@ -66,54 +66,42 @@ function createHeart() {
 
 <section class="photo-section">
   <h2 class="titulo-mes">marzo 2026</h2>
-
-  <div class="photo-container">
     
-    <div class="photo-machine">
-      <div class="machine-top">
-        <div class="lens"></div>
-      </div>
+<div class="photo-section">
 
-      <div class="photo-output">
-        <div class="photo-strip" id="photoStrip">
-          <img src="foto1.jpg">
-          <img src="foto2.jpg">
-          <img src="foto3.jpg">
-          <img src="foto4.jpg">
-        </div>
-      </div>
-    </div>
+  <div id="photoStrip" class="photo-strip">
+    <img src="foto1.jpg">
+    <img src="foto2.jpg">
+    <img src="foto3.jpg">
+  </div>
 
-    <div class="floating-message" id="floatingMessage">
-      <p>
+  <div id="floatingMessage" class="floating-message">
         nuestra primera cita! primera de muchas jijij :3 estaba tan nerviosa que me perdí en el metro 
         (cosa que normalmente no pasa, okei). la pasé demasiado biennn, tenía la wata toda revuelta de la emoción,
         pero, a pesar de los nervios, me sentí extremadamente cómoda contigooo. tenerte cerca, abrazarte, besarte,
         y reírme contigo me hizo entender que todo estaba finalmente en su lugar.
         
-        hasta el día de hoy me emociona mucho encontrarme contigo, ya sea en el metro o en algún terminal.
+        hasta el día de hoy me emociona mucho reencontrarme contigo, ya sea en el metro o en algún terminal.
         ver tu carita y poder acercarte a mí, sentir un beso tuyo o un abrazo apretado después de semanas...
         no cambiaría por nada del mundo lo bien que se siente volver a encontrarnos, mariposas en la wata cada vez!
         
         hoy cumplimos dos meses y lo pasaremos juntasss. me hace muy feliz todo contigo
         te amo cantidades industriales, mi monita preciosa<3
-      </p>
-    </div>
-
   </div>
 
-  <button class="print-btn" onclick="printPhotos()">
-    imprimir!
-  </button>
-</section>
+</div>
+
+<button class="print-btn" onclick="printPhotos()">
+  imprimir!
+</button>
 
 <script>
 function printPhotos() {
+  document.getElementById("photoStrip").style.opacity = "1";
   document.getElementById("photoStrip").style.transform = "translateY(0)";
 
-  const message = document.getElementById("floatingMessage");
-  message.style.opacity = "1";
-  message.style.transform = "translateY(0)";
+  document.getElementById("floatingMessage").style.opacity = "1";
+  document.getElementById("floatingMessage").style.transform = "translateY(0)";
 }
 </script>
 
