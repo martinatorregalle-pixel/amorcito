@@ -179,6 +179,9 @@ footer {
   color: #5a0000;
   text-align: left;
 }
+.mensaje p {
+  margin-bottom: 15px;
+}
 
 /* Solo para pantallas grandes (computador) */
 @media (min-width: 900px) {
