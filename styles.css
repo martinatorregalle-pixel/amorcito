@@ -153,9 +153,8 @@ footer {
 .collage-vertical {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  max-width: 220px;
-  width: 90%;
+  gap: 12px;
+  width: 160px;   /* tamaño fijo más pequeño */
 }
 
 .collage-vertical img {
