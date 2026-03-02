@@ -46,6 +46,24 @@
     </ul>
 </section>
 
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "❤";
+    heart.classList.add("floating-heart");
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(heart);
+    setInterval(createHeart, 500);
+</script>
+    setTimeout(() => {
+        heart.remove();
+    }, 7000);
+}
+
 <section class="photo-section">
   <h2 class="titulo-mes">marzo 2026</h2>
 
@@ -91,10 +109,8 @@
 
 <script>
 function printPhotos() {
-  // imprimir tira
   document.getElementById("photoStrip").style.transform = "translateY(0)";
 
-  // mostrar mensaje
   const message = document.getElementById("floatingMessage");
   message.style.opacity = "1";
   message.style.transform = "translateY(0)";
@@ -103,24 +119,6 @@ function printPhotos() {
 
 <footer>
         <p>&copy; 03-01-2026 te amuuu</p>
-        
-<script>
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.innerHTML = "❤";
-    heart.classList.add("floating-heart");
-
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
-    heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
-
-    document.body.appendChild(heart);
-setInterval(createHeart, 500);
-</script>
-    setTimeout(() => {
-        heart.remove();
-    }, 7000);
-}
 
 </body>
 </html>
