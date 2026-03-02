@@ -100,8 +100,8 @@ function printPhotos() {
   message.style.transform = "translateY(0)";
 }
 </script>
-    
-    <footer>
+
+<footer>
         <p>&copy; 03-01-2026 te amuuu</p>
         
 <script>
@@ -115,7 +115,8 @@ function createHeart() {
     heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
 
     document.body.appendChild(heart);
-
+setInterval(createHeart, 500);
+</script>
     setTimeout(() => {
         heart.remove();
     }, 7000);
