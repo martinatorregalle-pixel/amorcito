@@ -145,30 +145,30 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 60px;
   flex-wrap: wrap;
 }
 
-/* COLLAGE */
-.collage {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+/* Cabina vertical */
+.collage-vertical {
+  display: flex;
+  flex-direction: column;
   gap: 15px;
-  max-width: 380px;   /* límite elegante en compu */
-  width: 90%;         /* adaptable */
+  max-width: 220px;
+  width: 90%;
 }
 
-.collage img {
+.collage-vertical img {
   width: 100%;
-  aspect-ratio: 3 / 4;   /* mantiene proporción bonita */
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-/* CAJITA DEL MENSAJE */
+/* Cajita mensaje */
 .mensaje {
-  width: 300px;
+  max-width: 320px;
   background: #fff0f3;
   padding: 25px;
   border-radius: 20px;
