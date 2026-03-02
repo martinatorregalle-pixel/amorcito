@@ -135,102 +135,41 @@ footer {
     border-color: #8b0000;
 }
 
-
-.photobooth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
+.marzo {
+  margin-top: 80px;
 }
 
-.titulo-mes {
-  font-size: 40px;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 30px;
-}
-.photo-section {
+.collage-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 60px;
-  margin-top: 60px;
   flex-wrap: wrap;
-}
-
-.photo-strip {
-  background: white;
-  padding: 15px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1.2s ease;
-}
-
-.photo-strip img {
-  width: 200px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.floating-message {
-  max-width: 320px;
-  background: white;
-  padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  font-family: 'Quicksand', sans-serif;
-  line-height: 1.7;
-
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 1.2s ease;
-}
-
-.print-btn {
-  display: block;
-  margin: 50px auto;
-  padding: 12px 30px;
-  border-radius: 25px;
-  border: none;
-  background: #d90429;
-  color: white;
-  cursor: pointer;
-}
-
-/* mensaje oculto al inicio */
-.floating-message {
-  max-width: 320px;
-  background: white;
-  padding: 30px;
-  border-radius: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  font-family: 'Quicksand', sans-serif;
-  line-height: 1.7;
-  font-size: 15px;
-
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
-
-.print-btn {
   margin-top: 40px;
-  padding: 12px 30px;
-  border-radius: 25px;
-  border: none;
-  background: #d90429;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-.print-btn:hover {
-  background: #9d0208;
+.collage {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 15px;
+}
+
+.collage img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.mensaje {
+  max-width: 350px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-family: 'Playfair Display', serif;
+  line-height: 1.7;
+  font-size: 15px;
 }
