@@ -45,6 +45,66 @@
         </li>
     </ul>
 </section>
+
+<section class="photo-section">
+  <h2 class="titulo-mes">marzo 2026</h2>
+
+  <div class="photo-container">
+    
+    <div class="photo-machine">
+      <div class="machine-top">
+        <div class="lens"></div>
+      </div>
+
+      <div class="photo-output">
+        <div class="photo-strip" id="photoStrip">
+          <img src="foto1.jpg">
+          <img src="foto2.jpg">
+          <img src="foto3.jpg">
+          <img src="foto4.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-message" id="floatingMessage">
+      <p>
+        nuestra primera cita! primera de muchas jijij :3 estaba tan nerviosa que me perdí en el metro 
+        (cosa que normalmente no pasa, okei). la pasé demasiado biennn, tenía la wata toda revuelta de la emoción,
+        pero, a pesar de los nervios, me sentí extremadamente cómoda contigooo. tenerte cerca, abrazarte, besarte,
+        y reírme contigo me hizo entender que todo estaba finalmente en su lugar.
+        
+        hasta el día de hoy me emociona mucho encontrarme contigo, ya sea en el metro o en algún terminal.
+        ver tu carita y poder acercarte a mí, sentir un beso tuyo o un abrazo apretado después de semanas...
+        no cambiaría por nada del mundo lo bien que se siente volver a encontrarnos, mariposas en la wata cada vez!
+        
+        hoy cumplimos dos meses y lo pasaremos juntasss. me hace muy feliz todo contigo
+        te amo cantidades industriales, mi monita preciosa<3
+      </p>
+    </div>
+
+  </div>
+
+  <button class="print-btn" onclick="printPhotos()">
+    imprimir!
+  </button>
+</section>
+
+setInterval(createHeart, 500);
+</script>
+
+
+<script>
+function printPhotos() {
+  // imprimir tira
+  document.getElementById("photoStrip").style.transform = "translateY(0)";
+
+  // mostrar mensaje
+  const message = document.getElementById("floatingMessage");
+  message.style.opacity = "1";
+  message.style.transform = "translateY(0)";
+}
+</script>
+    
     <footer>
         <p>&copy; 03-01-2026 te amuuu</p>
         
