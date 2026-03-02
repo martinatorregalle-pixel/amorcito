@@ -152,22 +152,18 @@ footer {
 /* COLLAGE */
 .collage {
   display: grid;
-  grid-template-columns: repeat(2, 120px);
-  gap: 10px;
-  width: 230px; /* fuerza tamaño máximo */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 380px;   /* límite elegante en compu */
+  width: 90%;         /* adaptable */
 }
 
 .collage img {
-  height: 210px !important;
-}
-}
-
-.collage img {
-  width: 100% !important;
-  height: 150px !important;
+  width: 100%;
+  aspect-ratio: 3 / 4;   /* mantiene proporción bonita */
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 /* CAJITA DEL MENSAJE */
