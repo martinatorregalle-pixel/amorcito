@@ -143,23 +143,24 @@ footer {
 .collage-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
+  align-items: flex-start;
+  gap: 40px;
   margin-top: 60px;
   flex-wrap: wrap;
 }
 
-/* Cabina vertical */
+/* BLOQUE DE FOTOS */
 .collage-vertical {
+  width: 180px; /* tamaño controlado para compu */
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 160px;   /* tamaño fijo más pequeño */
 }
 
+/* FOTOS HORIZONTALES 4:3 REALES */
 .collage-vertical img {
   width: 100%;
-  aspect-ratio: 4 / 3;   /* formato horizontal */
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
