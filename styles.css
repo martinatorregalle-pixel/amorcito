@@ -139,44 +139,42 @@ footer {
   margin-top: 80px;
 }
 
+/* CONTENEDOR GENERAL */
 .collage-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 50px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
-/* Collage más pequeño y delicado */
+/* COLLAGE */
 .collage {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 12px;
+  grid-template-columns: repeat(2, 120px);
+  gap: 10px;
+  width: 250px; /* fuerza tamaño máximo */
 }
 
 .collage img {
-  width: 140px;
-  height: 180px;
+  width: 100% !important;
+  height: 150px !important;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.collage img:hover {
-  transform: scale(1.05);
-}
-
-/* Texto más bonito */
+/* CAJITA DEL MENSAJE */
 .mensaje {
-  max-width: 320px;
-  background: #fff6f8;
+  width: 300px;
+  background: #fff0f3;
   padding: 25px;
-  border-radius: 18px;
-  font-family: 'Playfair Display', serif;
-  line-height: 1.8;
+  border-radius: 20px;
+  border: 2px solid #8b0000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   font-size: 14px;
+  line-height: 1.7;
   color: #5a0000;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
 }
