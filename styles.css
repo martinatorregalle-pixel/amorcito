@@ -178,3 +178,27 @@ footer {
   color: #5a0000;
   text-align: left;
 }
+
+/* Solo para pantallas grandes (computador) */
+@media (min-width: 900px) {
+
+  .collage-container {
+    max-width: 800px;
+    margin: 60px auto;
+    justify-content: center;
+  }
+
+  .collage {
+    grid-template-columns: repeat(2, 110px);
+    width: 230px;
+  }
+
+  .collage img {
+    height: 140px !important;
+  }
+
+  .mensaje {
+    width: 280px;
+  }
+
+}
