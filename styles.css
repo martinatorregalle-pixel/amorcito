@@ -134,3 +134,96 @@ footer {
     background: #ffe6ea;
     border-color: #8b0000;
 }
+
+
+.photobooth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.titulo-mes {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+.photo-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.photo-machine {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.machine-top {
+  background: #c1121f;
+  height: 150px;
+  border-radius: 20px 20px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lens {
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+}
+
+.photo-output {
+  background: #222;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-strip {
+  background: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transform: translateY(-100%);
+  transition: transform 2s ease;
+}
+
+.photo-strip {
+  background: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+
+
+  transform: translateY(-120%);
+  transition: transform 2s ease;
+}
+
+.photo-output {
+  background: #222;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* mensaje oculto al inicio */
+.floating-message {
+  max-width: 280px;
+  background: white;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
