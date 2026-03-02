@@ -181,6 +181,7 @@ footer {
 }
 .mensaje p {
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* Solo para pantallas grandes (computador) */
