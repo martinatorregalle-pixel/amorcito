@@ -148,19 +148,25 @@ footer {
   font-family: 'Playfair Display', serif;
   margin-bottom: 30px;
 }
-
-.photo-section {
-  text-align: center;
-  margin-top: 80px;
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .photo-machine {
-  width: 280px;
-  margin: 0 auto;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .machine-top {
-  background: #c1121f;
+  background: linear-gradient(to bottom, #d90429, #9d0208);
+  width: 100%;
   height: 150px;
   border-radius: 20px 20px 10px 10px;
   display: flex;
@@ -168,29 +174,19 @@ footer {
   align-items: center;
 }
 
-
 .lens {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: black;
   border-radius: 50%;
 }
 
 .photo-output {
-  background: #222;
-  height: 30px;
+  background: #111;
+  width: 100%;
+  height: 25px;
   overflow: hidden;
   position: relative;
-}
-
-.photo-strip {
-  background: white;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transform: translateY(-100%);
-  transition: transform 2s ease;
 }
 
 .photo-strip {
@@ -201,29 +197,45 @@ footer {
   gap: 10px;
   border-radius: 15px;
 
-
-  transform: translateY(-120%);
+  transform: translateY(-110%);
   transition: transform 2s ease;
 }
 
-.photo-output {
-  background: #222;
-  height: 30px;
-  overflow: hidden;
-  position: relative;
+.photo-strip img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 /* mensaje oculto al inicio */
 .floating-message {
-  max-width: 280px;
+  max-width: 320px;
   background: white;
-  padding: 25px;
-  border-radius: 25px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
   font-family: 'Quicksand', sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 15px;
 
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.print-btn {
+  margin-top: 40px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #d90429;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.print-btn:hover {
+  background: #9d0208;
 }
