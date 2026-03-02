@@ -159,10 +159,10 @@ footer {
 
 .collage-vertical img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: 200px;
   object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
 /* Cajita mensaje */
