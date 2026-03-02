@@ -152,9 +152,14 @@ footer {
 /* COLLAGE */
 .collage {
   display: grid;
-  grid-template-columns: repeat(2, 120px);
-  gap: 10px;
-  width: 250px; /* fuerza tamaño máximo */
+  grid-template-columns: repeat(2, 160px);
+  gap: 15px;
+  width: 340px; /* fuerza tamaño máximo */
+}
+
+.collage img {
+  height: 210px !important;
+}
 }
 
 .collage img {
