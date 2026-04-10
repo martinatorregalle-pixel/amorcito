@@ -185,33 +185,42 @@ footer {
 }
 
 .tarjeta {
+  display: flex;
+  flex-direction: row; /* 👈 esto es CLAVE */
+  align-items: center;
+  gap: 20px;
+
+  background: #ffe6ea; /* 👈 mismo rosado que tus li */
+  padding: 1.5em;
+  border-radius: 12px;
+  border: 2px solid #8b0000;
+
+  max-width: 800px;
+  margin: 1.5em auto;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 15px rgba(139, 0, 0, 0.3);
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
 }
-  display: flex;
-  align-items: center;
-  gap: 25px;
-
-  background-color: #fdf6f9;
-  padding: 25px;
-  border-radius: 20px;
-    border: 2px solid #8b0000;
-
-  max-width: 700px;   /* 👈 limita el tamaño total */
-  margin: 50px auto;
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .gif-tecito {
-  width: 250px;  /* 👈 hazlo más grande */
-  max-width: 40%;
-  flex-shrink: 0;      /* 👈 evita que se achique */
-  border-radius: 15px;
+  width: 220px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.contenido p {
+  margin: 0 0 10px 0;
 }
 
 @media (max-width: 600px) {
@@ -219,19 +228,6 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-
-  .gif-tecito {
-    width: 220px;
-  }
-}
-
-.contenido {
-  flex: 1;             /* 👈 el texto usa el resto del espacio */
-}
-
-.texto p {
-  margin-bottom: 10px;
-  line-height: 1.5;
 }
 
 /* Solo para pantallas grandes (computador) */
