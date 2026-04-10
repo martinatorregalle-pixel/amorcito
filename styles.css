@@ -189,7 +189,7 @@ footer {
   align-items: center;
   gap: 20px;
 
-  background-color: #fff;
+  background-color: #fdf6f9;
   padding: 20px;
   border-radius: 20px;
 
@@ -199,7 +199,7 @@ footer {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.gif-tecito {
+.gif-Video {
   width: 120px;
   border-radius: 15px;
 }
