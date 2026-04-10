@@ -184,17 +184,19 @@ footer {
   text-align: justify;
 }
 
-.gif-tecito {
-  width: 200px;
-  display: block;
-  margin: 40px auto;
-  animation: flotar 3s ease-in-out infinite;
+.bloque {
+  display: flex;
+  align-items: center; /* alinea vertical */
+  gap: 20px; /* espacio entre gif y texto */
 }
 
-@keyframes flotar {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+.gif-tecito {
+  width: 150px;
+  border-radius: 12px;
+}
+
+.texto {
+  font-size: 18px;
 }
 
 /* Solo para pantallas grandes (computador) */
