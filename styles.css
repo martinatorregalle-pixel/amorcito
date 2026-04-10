@@ -186,11 +186,11 @@ footer {
 
 .tarjeta {
   display: flex;
-  flex-direction: row; /* 👈 esto es CLAVE */
+  flex-direction: row;
   align-items: center;
   gap: 20px;
 
-  background: #ffe6ea; /* 👈 mismo rosado que tus li */
+  background: #ffe6ea;
   padding: 1.5em;
   border-radius: 12px;
   border: 2px solid #8b0000;
@@ -198,15 +198,13 @@ footer {
   max-width: 800px;
   margin: 1.5em auto;
 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 👈 va aquí */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
   transform: scale(1.03);
   box-shadow: 0 0 15px rgba(139, 0, 0, 0.4);
-}
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .gif-tecito {
