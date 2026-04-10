@@ -184,6 +184,19 @@ footer {
   text-align: justify;
 }
 
+.gif-tecito {
+  width: 200px;
+  display: block;
+  margin: 40px auto;
+  animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
 /* Solo para pantallas grandes (computador) */
 @media (min-width: 900px) {
 
