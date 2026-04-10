@@ -187,26 +187,31 @@ footer {
 .tarjeta {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 
   background-color: #fdf6f9;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
 
-  width: fit-content;
+  max-width: 700px;   /* 👈 limita el tamaño total */
   margin: 50px auto;
 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .gif-tecito {
-  width: 120px;
+  width: 180px;        /* 👈 hazlo más grande */
+  flex-shrink: 0;      /* 👈 evita que se achique */
   border-radius: 15px;
 }
 
-.texto {
-  font-size: 18px;
-  color: #333;
+.contenido {
+  flex: 1;             /* 👈 el texto usa el resto del espacio */
+}
+
+.texto p {
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 /* Solo para pantallas grandes (computador) */
