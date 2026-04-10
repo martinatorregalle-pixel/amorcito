@@ -184,19 +184,29 @@ footer {
   text-align: justify;
 }
 
-.bloque {
+.tarjeta {
   display: flex;
-  align-items: center; /* alinea vertical */
-  gap: 20px; /* espacio entre gif y texto */
+  align-items: center;
+  gap: 20px;
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+
+  width: fit-content;
+  margin: 50px auto;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.gif-Video {
-  width: 150px;
-  border-radius: 12px;
+.gif-tecito {
+  width: 120px;
+  border-radius: 15px;
 }
 
 .texto {
   font-size: 18px;
+  color: #333;
 }
 
 /* Solo para pantallas grandes (computador) */
