@@ -201,7 +201,8 @@ footer {
 }
 
 .gif-tecito {
-  width: 180px;        /* 👈 hazlo más grande */
+  width: 250px;  /* 👈 hazlo más grande */
+  max-width: 40%;
   flex-shrink: 0;      /* 👈 evita que se achique */
   border-radius: 15px;
 }
