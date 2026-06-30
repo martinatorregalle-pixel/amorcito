@@ -276,6 +276,14 @@ footer {
   font-family: sans-serif;
 }
 
+.foto {
+  text-align: center;
+}
+
+.foto img {
+  width: 300px; /* puedes cambiar el tamaño */
+  border-radius: 15px; /* esquinas redondeadas */
+}
 
 /* animación */
 @keyframes latido {
