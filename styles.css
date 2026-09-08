@@ -281,8 +281,9 @@ footer {
 }
 
 .foto img {
-  width: 300px; /* puedes cambiar el tamaño */
-  border-radius: 15px; /* esquinas redondeadas */
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
 }
 
 /* animación */
