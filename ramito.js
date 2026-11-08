@@ -4,49 +4,29 @@ const fondo = document.getElementById("stickers-fondo");
 
 botonFlores.addEventListener("click", function() {
 
+    // Evita agregar stickers repetidos al apretar varias veces
     if (fondo.children.length > 0) return;
 
-    const posiciones = [];
-
-    for (let i = 0; i < 30; i++) {
-
-        let x, y;
-        let intentos = 0;
-        let posicionValida = false;
-
-        // Busca una posición con suficiente espacio
-        while (!posicionValida && intentos < 100) {
-
-            x = Math.random() * 95;
-            y = Math.random() * 95;
-
-            posicionValida = posiciones.every(posicion => {
-                const distancia = Math.sqrt(
-                    Math.pow(x - posicion.x, 2) +
-                    Math.pow(y - posicion.y, 2)
-                );
-
-                return distancia > 22;
-            });
-
-            intentos++;
-        }
-
-        if (!posicionValida) continue;
-
-        posiciones.push({ x, y });
+    // Crea 12 stickers
+    for (let i = 0; i < 12; i++) {
 
         const flor = document.createElement("img");
 
+        // Imagen que utilizaremos
         flor.src = "octubre.png";
+
+        // Clase CSS
         flor.classList.add("sticker-fondo");
 
-        flor.style.left = x + "%";
-        flor.style.top = y + "%";
+        // Posición aleatoria
+        flor.style.left = Math.random() * 90 + "%";
+        flor.style.top = Math.random() * 90 + "%";
 
+        // Rotación aleatoria
         const rotacion = Math.random() * 50 - 25;
         flor.style.transform = `rotate(${rotacion}deg)`;
 
+        // Agrega la flor al fondo
         fondo.appendChild(flor);
     }
 });
