@@ -299,3 +299,42 @@ footer {
 body {
   cursor: url("snoopyy.png"), auto;
 }
+
+
+.foto {
+  text-align: center;
+}
+
+.foto img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+
+/* Contenedor de los stickers */
+#stickers-fondo {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.sticker-fondo {
+    position: absolute;
+    width: 75px;
+    height: auto;
+    opacity: 0.85;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 0.85;
+        scale: 1;
+    }
+}
